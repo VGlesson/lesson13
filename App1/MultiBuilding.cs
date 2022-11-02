@@ -8,7 +8,7 @@ namespace App1
 {
     class MultiBuilding:Building
     {
-        string flors;
+        string flors { get; set; }
         int Flors
         {
             get
@@ -28,6 +28,10 @@ namespace App1
             :base (direction, length, width, height)
         {
             this.flors = flors;
+        }
+
+        public MultiBuilding(string v) : base(v)
+        {
         }
 
         public string Print()

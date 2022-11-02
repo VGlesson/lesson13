@@ -8,10 +8,10 @@ namespace App1
 {
     class Building
     {
-        string direction;
-        int length;
-        int width;
-        int height;
+        string direction { get; set; }
+        int length { get; set; }
+        int width { get; set; }
+        int height { get; set; }
 
         public Building (string direction, int length, int width, int height)
         {
@@ -20,6 +20,11 @@ namespace App1
             this.width = width;
             this.height = height;
         }
+
+        public Building(string v)
+        {
+        }
+
         public string Print()
         {
             return $"{direction} {length} {width} {height}";
